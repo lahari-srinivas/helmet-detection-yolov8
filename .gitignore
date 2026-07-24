@@ -1,5 +1,8 @@
 Helmet-Detection_YOLOv8-2/
-runs/
+runs/detect/train-2/*
+!runs/detect/train-2/weights/
+runs/detect/train-2/weights/last.pt
+runs/detect/train-3/
 __pycache__/
 *.pyc
 .venv/
