@@ -1,0 +1,6 @@
+Helmet-Detection_YOLOv8-2/
+runs/
+__pycache__/
+*.pyc
+.venv/
+venv/
