@@ -1,15 +1,18 @@
-import streamlit as st
-from ultralytics import YOLO
-from PIL import Image
 import numpy as np
+import streamlit as st
+from PIL import Image
+
+from ultralytics import YOLO
 
 st.set_page_config(page_title="Helmet Detection", layout="centered")
 st.title("🪖 Helmet Detection using YOLOv8")
 st.write("Upload an image to detect whether people are wearing helmets.")
 
+
 @st.cache_resource
 def load_model():
     return YOLO("runs/detect/train-2/weights/best.pt")
+
 
 model = load_model()
 
